@@ -11,7 +11,7 @@
 // git remote add origin git@github.com:idxiao9/demo_git.git 创建远程连接
 // git push -u origin master 提交本地git仓库内容到远程仓库 第一次
 // 提交需要-u origin master 指向一下分支。 以后可以只用git push
-// ll 查看现在目录下的文件 ls -a 查看目录结构
+// ll 查看现在目录下的文件 ls -a 列出文件夹下所有文件，包括隐藏文件
 // cat filename 显示文件内容 vim filename 编辑文件，如果文件不存在，则会先新建。
 // vim 编辑时，i 写入内容，esc 退出写入 ：wq 退出编辑
 // git clone git@github.com:idxiao9/demo_git 克隆远程仓库，用来克隆的文件夹必须没有
@@ -24,3 +24,10 @@
 // git tag 查看所有标签 git tag filename 创建标签
 // git tag -a filename -m "some info" 指定提交时的信息 git tag -d filename 删除标签
 // git push origin filename 标签发布
+
+// 分支管理
+// git branch branchName 创建分支  git branch 查看所有分支
+// git checkout branchName 切换到branchName分支上
+// git merge branchName 要先切换到master分支，然后运行此命令合并分支
+// git branch -d branchName 删除此分支
+ 
