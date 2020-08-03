@@ -18,3 +18,9 @@
 // 被 git init 过。
 // pwd 查看当前文件位置，git log 查看commit记录 git reset --hard id 回滚
 // echo "something" >> filename echo 输出的意思，将something 写入到文件中 >>追加的意思
+
+
+// 标签管理
+// git tag 查看所有标签 git tag filename 创建标签
+// git tag -a filename -m "some info" 指定提交时的信息 git tag -d filename 删除标签
+// git push origin filename 标签发布
