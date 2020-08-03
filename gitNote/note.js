@@ -1,4 +1,5 @@
-// here I keep my note about git
+// here I keep my note about git 
+// git有图形化界面方便使用，sourcetree
 // git comands:
 // git add filename 提交工作区已经修改的文件到暂存区
 // git commit -m "some describes" 将暂存区的文件或修改记录更新到git仓库，同时创建log id 用来标注回滚位置
@@ -8,7 +9,12 @@
 // git init 初始化git仓库
 // echo " # demo_git" >> filename 从行程仓库获取文件
 // git remote add origin git@github.com:idxiao9/demo_git.git 创建远程连接
-// git push -u origin master 提交本地git仓库内容到远程仓库 以后可以只用git push
+// git push -u origin master 提交本地git仓库内容到远程仓库 第一次
+// 提交需要-u origin master 指向一下分支。 以后可以只用git push
 // ll 查看现在目录下的文件 ls -a 查看目录结构
 // cat filename 显示文件内容 vim filename 编辑文件，如果文件不存在，则会先新建。
 // vim 编辑时，i 写入内容，esc 退出写入 ：wq 退出编辑
+// git clone git@github.com:idxiao9/demo_git 克隆远程仓库，用来克隆的文件夹必须没有
+// 被 git init 过。
+// pwd 查看当前文件位置，git log 查看commit记录 git reset --hard id 回滚
+// echo "something" >> filename echo 输出的意思，将something 写入到文件中 >>追加的意思
