@@ -21,3 +21,20 @@ When a route is matched, its path is available at ctx._matchedRoute and if named
 Route paths will be translated to regular expressions using path-to-regexp.
 
 Query strings will not be considered when matching requests.
+
+Router prefixes
+Route paths can be prefixed at the router level:
+
+const router = new Router({
+  prefix: '/users'
+});
+
+router.get('/', ...); // responds to "/users"
+router.get('/:id', ...); // responds to "/users/:id"
+URL parameters
+Named route parameters are captured and added to ctx.params.
+
+router.get('/:category/:title', (ctx, next) => {
+  console.log(ctx.params);
+  // => { category: 'programming', title: 'how-to-node' }
+});
