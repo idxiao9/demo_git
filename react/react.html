@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CDN 引入react 和 babel 不能用在生产环境，因为会有加载延时 -->
+	<!-- 要用jSX就必须用babel转译，需要把scrip标签的type 改成“text/babel” 来通知babel这里的js代码需要转译 -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div id="root">
+		
+	</div>
+	<div id="app">
+		
+	</div>
+	<!-- react要自己搭建一个运行环境是比较复杂难用的，用Create React App直接创建项目是最好的选择 -->
+	<script type="text/babel">
+	<!-- 用CDN引入的react 可以直接在Js中调用 React 和 ReactDOM -->
+		ReactDOM.render(<h1>show something to us!</h1>,document.getElementById('root'))
+	</script>
+	<!-- 外部引入的script标签即使用了type="text/babel" babel也不会转译，为什么？？ -->
+	<script type="text/babel" src="index.js"></script>
+</body>
+</html>

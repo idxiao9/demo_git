@@ -28,7 +28,7 @@ render(app,{
 	debug: process.env.NODE_ENV !== 'production',
 })
 
-//配置静态文件地址，文件路径为root/filename
+//配置静态文件地址，文件路径为root/filename,打包上线的时候，打包好的js，css 静态文件要放在此目录下，否则会找不到文件
 app.use(static(__dirname+"/static"))
 
 //前端post请求发送formData的类型数据时，需要服务端引入中间件body-parser，
